@@ -4,13 +4,13 @@
   float: left;
 
   .header {
-    background-color: #253141;
+    background-color: $background-color1;
     height: 100px;
     width: 300px;
     display: flex;
     align-items: center;
     &__box {
-      color:#ffffff;
+      color: $font-color1;
       height: 20px;
       width: 260px;
       margin: 0 20px;
@@ -25,7 +25,7 @@
         li {
           margin-left: 5px;
           a { 
-            color: #ffffff;
+            color: $font-color1;
           }
         }
         &__new{}
@@ -35,7 +35,7 @@
   }
   
   .group-list {
-    background-color: #2f3e51;
+    background-color: $background-color2;
     height: calc(100vh - 100px);
     width: 300px;
     margin: 0;
@@ -43,7 +43,7 @@
     text-decoration: none;
     font-weight: bold;
     p {
-      color: #ffffff;
+      color: $font-color1;
     }
     &__name {
       font-size: 15px;
@@ -62,25 +62,25 @@
   width: calc(100vw - 300px);
   float: right;
   .header {
-    background-color: #ffffff; 
+    background-color: $background-color3; 
     height: 100px;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
     &__group {
       &__name {
-        color: #333333;
+        color: $font-color2;
         font-size: 20px;
         padding: 35px 0 15px;
       }
       &__member {
-        color: #999999;
+        color: $font-color3;
         font-size: 12px;
       }
     }
     &__group-edit {
       height: 40px;
-      color: #38aef0;
+      color: $font-color4;
       font-size: 16px;
       line-height: 40px;
       padding: 0 20px;
@@ -90,7 +90,7 @@
   }
 
   .message {
-    background-color: #fafafa;
+    background-color: $background-color4;
     height: calc(100vh - 100px - 90px);
     padding: 35px 0 0 40px;
     overflow: scroll;
@@ -98,25 +98,25 @@
       display: flex;
       padding-bottom: 12px;
       &__name {
-        color: #333333;
+        color: $font-color5;
         font-size: 16px;
         font-weight: bold;
         padding-right: 10px;
       }
       &__date {
         font-size: 12px;
-        color: #434A54;
+        color: $font-color6;
       }
     }
 
     &__comment {
-      color: #434a54;
+      color: $font-color7;
       font-size: 14px;
     }
   }
 
   .form {
-    background-color: #d2d2d2;
+    background-color: $background-color5;
     height: 90px;
     padding: 20px 40px;
     form {
@@ -134,7 +134,7 @@
           position: absolute;
           top: 10px;
           right: 10px;
-          color: black;
+          color: $font-color8;
           font-size: 20px;
           &__file {
             display: none;
@@ -143,8 +143,8 @@
       }
 
       .send-btn {
-        color: white;
-        background-color: #38aef0;
+        color: $font-color9;
+        background-color: $background-color6;
         height: 50px;
         width: 100px; 
       }
