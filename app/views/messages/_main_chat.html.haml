@@ -1,0 +1,30 @@
+.chat-main
+  .header
+    .header__group
+      %h2.header__group__name 
+        Groupe-name
+      %p.header__group__member
+        Member：name
+    %p.header__group-edit
+      Edit
+
+
+  .message
+    .message__left
+      .message__left__name
+        name
+      .message__left__date
+        2020/02/17(Mon) 9:00:00
+    .message__comment  
+      comment...
+
+
+  .form
+    %form.new_message
+      .input
+        %input{type: "text", class:"input__text", placeholder: "type a message"}
+        %label{class:"input__image"}
+          -# = link_to "#" do
+          =icon('fas', 'image')
+          %input{type: "file", class:"input__image__file"}
+      %input{type: "submit", class:"send-btn", value: "Send"}
