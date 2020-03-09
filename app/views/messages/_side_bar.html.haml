@@ -1,14 +1,14 @@
 .side-bar
   .header
-    .header__box
-      %p.header__box__username sasaya
-      %ul.header__box__menu
-        %li.menu__new 
-          = link_to "#" do
-            =icon('fas', 'edit')
-        %li.menu__edit
-          = link_to "#" do
-            = icon('fas', 'cog')
+    %h3.header__name
+      = current_user.name
+    %ul.header__lists
+      %li.list
+        = link_to do
+          = icon('fas', 'pen-square', class: 'icon')
+      %li.list
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
         
   .group-list
     = link_to "#", class:"group-list" do
