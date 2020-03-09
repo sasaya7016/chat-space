@@ -1,0 +1,18 @@
+.side-bar
+  .header
+    .header__box
+      %p.header__box__username sasaya
+      %ul.header__box__menu
+        %li.menu__new 
+          = link_to "#" do
+            =icon('fas', 'edit')
+        %li.menu__edit
+          = link_to "#" do
+            = icon('fas', 'cog')
+        
+  .group-list
+    = link_to "#", class:"group-list" do
+      %p.group-list__name
+        TECHCAMP
+      %p.group-list__message
+        まだメッセージはありません
