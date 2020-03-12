@@ -9,11 +9,12 @@
       %li.list
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'icon')
-        
+    
   .group-list
     - current_user.groups.each do |group|
-   
-      %p.group-list__name
-        = group.name
-      %p.group-list__message
-        まだメッセージはありません
+      .group
+        = link_to group_messages_path(group) do
+          .group-list__name
+          = group.name
+        .group-list__message
+          = group.show_last_message
