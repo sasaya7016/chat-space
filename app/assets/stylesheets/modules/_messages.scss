@@ -34,26 +34,34 @@
   
   .group-list {
     background-color: $background-color2;
+    color: $font-color1;
     height: calc(100vh - 100px);
     width: 300px;
     margin: 0;
     padding: 20px 20px 0;
     text-decoration: none;
     font-weight: bold;
-    p {
-      color: $font-color1;
-    }
-    &__name {
-      font-size: 15px;
-      padding-bottom: 5px;
-    }
-    &__message {
-      font-size: 11px;
-      margin-top: 5px;
-      margin-bottom: 40px;
-    }
-  }
-}
+      .group {
+        a {
+          color: $font-color1;
+          text-decoration: none;
+        }
+      }  
+      .group-list {
+        color: $font-color1;
+        &__name {
+          font-size: 15px;
+          padding-bottom: 5px;
+      }
+        &__message {
+          font-size: 11px;
+          margin-top: 5px;
+          margin-bottom: 40px;
+        }
+      }  
+  }   
+}  
+
 
 
 .chat-main {
@@ -69,7 +77,7 @@
       &__name {
         color: $font-color2;
         font-size: 20px;
-        padding: 35px 0 15px;
+        padding: 35px 0 0px;
       }
       &__member {
         color: $font-color3;
