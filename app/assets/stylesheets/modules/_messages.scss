@@ -23,6 +23,7 @@
     &__lists  {
       display: flex;
       margin: 0 20px;
+      
     }
     li {
       margin-left: 5px;
@@ -100,24 +101,26 @@
     height: calc(100vh - 100px - 90px);
     padding: 35px 0 0 40px;
     overflow: scroll;
-    &__left {
-      display: flex;
-      padding-bottom: 12px;
-      &__name {
-        color: $font-color5;
-        font-size: 16px;
-        font-weight: bold;
-        padding-right: 10px;
+    .messages {
+      .messages__left {
+        display: flex;
+        padding-bottom: 12px;
+        &__name {
+          color: $font-color5;
+          font-size: 16px;
+          font-weight: bold;
+          padding-right: 10px;
+        }
+        &__date {
+          font-size: 12px;
+          color: $font-color6;
+        }
       }
-      &__date {
-        font-size: 12px;
-        color: $font-color6;
-      }
-    }
 
-    &__comment {
-      color: $font-color7;
-      font-size: 14px;
+      &__comment {
+        color: $font-color7;
+        font-size: 14px;
+      }
     }
   }
 
