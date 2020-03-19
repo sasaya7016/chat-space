@@ -29,6 +29,7 @@ set :keep_releases, 5
 set :linked_files, %w{ config/secrets.yml }
 
 # デプロイ処理が終わった後、Unicornを再起動するための記述 元々の記述削除
+
 # 元々記述されていた after 「'deploy:publishing', 'deploy:restart'」以下を削除して、次のように書き換え
 
 after 'deploy:publishing', 'deploy:restart'
