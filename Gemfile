@@ -75,4 +75,4 @@ end
   # gem 'pry-rails'    //行移動してます
   gem 'carrierwave'
   gem 'mini_magick'
-
+  gem 'fog-aws'
