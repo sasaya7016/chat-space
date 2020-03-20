@@ -4,6 +4,7 @@
       %h2.header__group__name
         = @group.name
       %p.header__group__member 
+        Member :
         - @group.users.each do |user|
           = user.name
     %p.header__group-edit

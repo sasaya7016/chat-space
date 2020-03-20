@@ -1,7 +1,8 @@
 .messages{data: {message: {id: message.id}}}
   .messages__left
-    .messages__left__name
+    %ul.messages__left__name 
       = message.user.name
+      
     .messages__left__date
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .messages__comment
