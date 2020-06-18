@@ -1,11 +1,11 @@
-# chat-space DB設計
+# chat-space
 <img width="1436" alt="chatspace" src="https://user-images.githubusercontent.com/61730661/85026902-3c2c7e80-b1b4-11ea-9502-3928e7207a42.png">
 <img width="1073" alt="chat-space2" src="https://user-images.githubusercontent.com/61730661/85026924-43ec2300-b1b4-11ea-8c4c-90f50c4dcf79.png">
 
 ## 概要
 > ### このアプリでできること
 >> ユーザーの登録、ログイン、ログアウト
->> グループ作成、編集/※（メンバー検索）インクリメンタルサーチ
+>> グループ作成、編集/（メンバー検索）インクリメンタルサーチ
 >> チャット機能/Ajax非同期通信/
 
 ## 使用した技術
